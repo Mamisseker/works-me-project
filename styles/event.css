@@ -1,0 +1,50 @@
+.event__section
+{
+    text-align: center;
+    border-radius: 47px;
+    margin-bottom: 50px;
+}
+
+.event__section-white-bg
+{
+    height: 856px;
+    background-color: #fff;
+}
+
+.event__section-upper-text
+{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 150%;
+    color: #fff;
+}
+
+.event__section-text-wr
+{
+    background-image: url(..//imgs/img8.svg);    
+    padding: 147px 963px 177px 105px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.event__section-text
+{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 150%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 36px;
+}
+
+.event__section-descryption
+{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 96px;
+}

@@ -1,0 +1,44 @@
+.choise__section
+{
+    text-align: center;
+    margin-bottom: 100px;
+    background: linear-gradient(0deg, #fff 35%, rgba(25, 23, 23, 0.5) 99%);
+    margin-top: 50px;
+}
+
+.choise__section-text
+{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 150%;
+    color: #fff;
+}
+
+.choise__section-card-wr
+{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.choise__section-card img
+{
+    width: 189px;
+    height: 105px;
+}
+
+.choise__section-card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.choise__section-card-text
+{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 150%;
+}

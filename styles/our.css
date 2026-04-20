@@ -1,0 +1,52 @@
+.our__restraunts
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #000;
+    padding-top: 30px;
+    margin-bottom: 32px;
+}
+
+.our__restraunts-text
+{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 150%;
+    color: #fff;        
+}
+
+.our__restraunts-cards
+{
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+    text-align: start;
+    padding-bottom: 80px;
+}
+
+.our__restraunts-card
+{
+    display: flex;
+    flex-direction: column;    
+    padding: 17px;
+    background: #480607;
+    width: 427px;
+    align-items: center;
+}
+
+.our__restraunts-cards img
+{
+    width: 375px;
+    height: 563px;
+    margin-bottom: 22px;
+}
+
+.our__restraunts-cards-text
+{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #fff;
+}

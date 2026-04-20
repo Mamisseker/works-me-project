@@ -1,0 +1,41 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Libertinus Sans', sans-serif;
+}
+a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.content
+{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+body
+{
+    background-color: #480607;
+}
+
+.g-button
+{
+    padding: 16px 36px;
+    background: #480607;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.g-button:active
+{
+    transform: scale(95%);
+}
