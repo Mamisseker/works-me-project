@@ -1,7 +1,7 @@
 .supplier__section
 {
     text-align: center;
-    
+    width: 100%;
 }
 
 .supplier__section-text
@@ -14,18 +14,23 @@
 
 .supplier__section-div
 {
-    padding: 23px 49px 150px 867px;
-    background-image: url(..//imgs/img12.svg);
+    display: flex;
+    padding: 155px 45px 155px 972px;
+    background-image: url(..//imgs/Снимок\ экрана\ 2026-04-07\ 000621\ 1.png);
     background-repeat: no-repeat;
     display: flex;
     gap: 72px;
+    justify-content:center;
+   background-size: 100% ;
+   align-items:center ;
 }
 
 .supplier__section-div-wr
 {
     background-color: #fff;
-    padding: 25px;
-    
+
+    padding: 20px;
+    margin-top: 50px;
 }
 
 .supplier__section-div-text

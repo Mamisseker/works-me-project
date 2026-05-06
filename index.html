@@ -17,17 +17,17 @@
     <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
-    <div class="content">
-        <header>
+    
+        <header id="header">
             <div  class="header__logo">
                 <img class="header__logo-small" src="./imgs/logo2.svg" alt="logo">
                 <img class="header__logo-text" src="./imgs/logo1.svg" alt="logo">
             </div>
             <nav class="header__navigation">
-                <a href="" class="header__link">Главная</a>
-                <a href="" class="header__link">Меню</a>
-                <a href="" class="header__link">О нас</a>
-                <a href="" class="header__link">Контакты</a>
+                <a href="#header" class="header__link">Главная</a>
+                <a href="#Menu" class="header__link">Меню</a>
+                <a href="#about" class="header__link">О нас</a>
+                <a href="#tephone" class="header__link">Контакты</a>
             </nav>
         </header>
         <main>
@@ -56,6 +56,7 @@
                     </div>
                 </div>
             </section>
+          
             <section class="our__restraunts">
                 <span class="our__restraunts-text">НАШИ РЕСТОРАНЫ</span>
                 <div class="our__restraunts-cards">
@@ -107,30 +108,30 @@
                             2.Живая музыка, которая <br>
                             создаст особое настроение, наполняя атмосферу гармонией и вдохновением. <br>
                         </span>
-                        <button class="g-button"> 
+                        <button class="g-button g-button--events" href="#"> 
                             Записаться на мероприятие
                         </button>
                     </div>
                 </div>
             </section>
-            <section class="catalog__section">
+            <section class="catalog__section" id="Menu">
                 <span class="catalog__section-text">Меню</span>
                 <div class="catalog__section-cards-wr">
                     <div class="catalog__section-cards">
                         <img src="imgs/img9.svg" alt="cards">
-                        <button class="g-button catalog__button">Основное</button>
+                        <button class="g-button catalog__button" href="#">Основное</button>
                     </div>
                     <div class="catalog__section-cards">
                         <img src="imgs/joel-robuchon 1.svg" alt="cards">
-                        <button class="g-button catalog__button">Десерты</button>
+                        <button class="g-button catalog__button" href="#">Десерты</button>
                     </div>
                     <div class="catalog__section-cards">
                         <img src="imgs/img10.svg" alt="cards">
-                        <button class="g-button catalog__button">Напитки</button>
+                        <button class="g-button catalog__button" href="#">Напитки</button>
                     </div>
                     <div class="catalog__section-cards"> 
                         <img src="imgs/img11.svg" alt="cards">
-                        <button class="g-button catalog__button">Секретное</button>
+                        <button class="g-button catalog__button" href="#">Секретное</button>
                     </div>
                 </div>
                 <button class="g-button catalog__section-button">ПЕРЕЙТИ В МЕНЮ</button>
@@ -152,9 +153,9 @@
                 </span>
                 <div class="line"></div>
             </div>
-            <div class="footer__info">
+            <div class="footer__info" id="about">
                 <div class="footer__info-location">
-                    <span class="footer__info-text">
+                    <span class="footer__info-text" id="tephone">
                         Адрес:Москва: <br>
                         ул. Архитектора Власова 19 <br>
                         т:+7 (912) 345-67-89    <br>
@@ -178,6 +179,6 @@
                 </div>
             </div>
         </footer>
-    </div>
+  
 </body>
 </html>

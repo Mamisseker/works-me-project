@@ -12,7 +12,7 @@ a
 }
 .content
 {
-    max-width: 1440px;
+    max-width: 1980px;
     margin: 0 auto;
 }
 body
@@ -29,11 +29,15 @@ body
     font-size: 16px;
     line-height: 150%;
     text-align: center;
-    
+    max-width: fit-content;
+    margin: auto;
     border: none;
     cursor: pointer;
     transition: transform 0.1s ease;
+    
 }
+
+
 
 .g-button:active
 {

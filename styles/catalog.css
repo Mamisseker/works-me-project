@@ -1,9 +1,24 @@
 .catalog__section
 {
     text-align: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    background: linear-gradient(180deg, #000 51.92%, #d9d9d9 100%);
-    margin-bottom: 20px;
+    
+    /* ГРАДИЕНТ: */
+    background: linear-gradient(180deg, 
+        #000000 35%,      /* Глубокий черный в самом верху */
+        #2a0404 63%,     /* Плавный переход в темно-темно-красный */
+        #480607 83%,     /* Твой основной цвет (максимум яркости под карточками) */
+        #480607 100%     /* Чистый твой цвет в самом низу для стыковки */
+    );
+    
+    margin-bottom: 0;    /* Убираем отступы, чтобы секции слиплись */
+    padding: 60px 0 20px 0; 
+    
+}
+.suppliers__section { 
+    background-color: #3d0000; 
 }
 
 .catalog__section-text
@@ -12,15 +27,17 @@
     font-size: 48px;
     line-height: 150%;
     color: #fff;
+    
 }
 
 .catalog__section-cards-wr
-{
-    display: flex;
+{    display: flex;
     gap: 70px;
     margin-bottom: 102px;
     justify-content: center;
+    margin-top: 25px;
 }
+
 
 .catalog__section-cards
 {
@@ -64,6 +81,7 @@
     font-size: 40px;
     line-height: 150%;
     color: #fff;
-    margin-bottom: 117px;
+    margin-bottom: 64px;
     border: none;
+    padding:15px 56px ;
 }

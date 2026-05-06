@@ -1,44 +1,52 @@
-.choise__section
-{
+.choise__section {
     text-align: center;
-    margin-bottom: 100px;
-    background: linear-gradient(0deg, #fff 35%, rgba(25, 23, 23, 0.5) 99%);
-    margin-top: 50px;
+    padding: 60px 0 80px 0;
+    margin-bottom: 40px;
+    
+    /* ГРАДИЕНТ: Твой бордовый плавно переходит в белый */
+    background: linear-gradient(180deg, 
+    #480607 0%,      /* Верх: чистый бордовый */
+    #480607 30%,     /* Держим цвет под заголовком */
+    #2a0405 55%,     /* ТОТ САМЫЙ БЛЮР: делаем бордовый очень темным в центре */
+    #a88a8b 85%,     /* Плавный переходный оттенок к белому */
+    #ffffff 100%     /* Низ: чистый белый */
+    );
 }
 
-.choise__section-text
-{
+.choise__section-text {
     font-weight: 400;
     font-size: 40px;
-    line-height: 150%;
     color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    display: block;
 }
 
-.choise__section-card-wr
-{
+.choise__section-card-wr {
     display: flex;
     justify-content: center;
-    gap: 200px;
+    gap: 120px; /* Чтобы всё было кучно, как на картинке */
+    align-items: flex-end; 
 }
 
-.choise__section-card img
-{
-    width: 189px;
-    height: 105px;
-}
-
-.choise__section-card
-{
+.choise__section-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding-top: 25px;
 }
 
-.choise__section-card-text
+.choise__section-card img {
+    /* Подгоняем размер иконок под скриншот */
+    width: 130px; 
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.choise__section-card-text 
 {
     font-weight: 400;
-    font-size: 40px;
-    line-height: 150%;
+    font-size: 36px;
+    color: #000;
 }
+     /* Текст внизу черный, как 
+

@@ -1,84 +1,74 @@
-.week__dish
-{
-    padding: 163px 710px 181px 130px;
-    background-image: url(..//imgs/img1.svg);
-    background-repeat: no-repeat;
+.week__dish {
+    /* 1. Растягиваем на всю ширину экрана, даже если блок внутри контейнера */
+    width: 100vw; 
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
+    /* 2. Высота блока будет подстраиваться под размер экрана */
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    justify-content: center;
     
+    /* 3. Отступы для текста (как в Figma) */
+    padding-left: 130px;
+    box-sizing: border-box;
+
+    /* 4. Картинка на весь блок без искажений */
+    background-image: url("../imgs/img1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;    /* Заполнит всё пространство */
+    background-position: center;
 }
-.week__dish-text
-{
+
+/* Сбрасываем лишние отступы у body, чтобы не было полос прокрутки */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.week__dish-text {
     font-weight: 400;
     font-size: 48px;
-    line-height: 150%;
     color: #fff;
-}
-.week__dish-text:nth-child(2)
-{
-    margin-bottom: 40px;
+    margin: 0;
 }
 
 .week__sale-text-wr {
-    margin-right: 350px;
+    position: relative;
     display: flex;
     flex-direction: column;
-    text-align: center;
     width: 220px;
     height: 131px;
-    position: relative; 
-    color: white;
-    padding: 20px;
-    
-   
-    isolation: isolate; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 60px;
+    color: #fff;
+    overflow: hidden;
 }
 
-/* Размытый фон */
 .week__sale-text-wr::before {
-    
+    content: "";
     position: absolute;
-    
+    inset: 0;
     background-color: #480607;
-    filter: blur(5px);
-    border: 1px solid #000;
-    z-index: -1; 
-}
-
-.week__sale-text-wr > * {
-    position: relative;
-    z-index: 2;
-}
-
-
-
-.week__sale-text-wr::before {
-    content: '';
-    position: absolute;
-    top: 1px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    border-radius: inherit;
     filter: blur(10px);
+    z-index: 0;
+}
+
+.week__sale-text-wr * {
+    position: relative;
     z-index: 1;
 }
 
-.week__sale-text
-{
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 150%;
-    color: #fff;
-    position: relative;
-    box-sizing: border-box;
-}
+.week__dish-text{font-size: 64px;}
 
-.week__sale-percent 
-{
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 150%;
-    color: #fff;
-}
+.week__sale-percent{font-size: 48px;}
+
+.week__sale-text{font-size: 20px;}
+
